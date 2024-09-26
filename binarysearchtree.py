@@ -8,7 +8,7 @@ class Node:
     value: value in the node
     """
     def __init__(self, value):
-        """ initialises the node"""
+        """ initialises the node """
         self.value = value
         self.left = None
         self.right = None
@@ -81,6 +81,7 @@ class BinarySearchTree:
         :return: A list
         """
         stack = []
+        stack2 = []
         temp = self.root
         while True:
             while temp is not None:
@@ -88,10 +89,11 @@ class BinarySearchTree:
                 temp = temp.left
             if stack:
                 temp = stack.pop()
-                print(temp.value, end=" ")
+                stack2.append(temp.value)
                 temp = temp.right
             else:
                 break
+        return stack2
 
     def pre_order_traversal(self):
         stack = []
@@ -146,12 +148,37 @@ class BinarySearchTree:
             if popped_node.left is not None:
                 stack.append(popped_node.left)
 
+    def kth_smallest(self, k):
+        """
+        finds the kth smallest value using inorder traversal
+        """
+        count = 1
+        stack = []
+        temp = self.root
+        while True:
+            while temp is not None:
+                stack.append(temp)
+                temp = temp.left
+            if stack:
+                temp = stack.pop()
+                if count == k:
+                    return temp.value
+                temp = temp.right
+                count += 1
+            else:
+                break
 
-
-
-
-
-
+    def is_valid_bst(self):
+        results_in_order = self.in_order_traversal()
+        print(results_in_order)
+        if results_in_order is None:
+            return False
+        if len(results_in_order) == 1:
+            return True
+        for i in range(1, len(results_in_order)):
+            if results_in_order[i] <= results_in_order[i - 1]:
+                return False
+        return True
 
 
 my_tree = BinarySearchTree()
@@ -180,5 +207,13 @@ my_tree.bfs()
 print()
 print("Depth First Search -->")
 my_tree.dfs()
+print()
+print(my_tree.kth_smallest(1))
+print(my_tree.kth_smallest(3))
+print(my_tree.kth_smallest(6))
+print()
+
+print("BST is valid:")
+print(my_tree.is_valid_bst())
 
 #print(my_tree.root)
