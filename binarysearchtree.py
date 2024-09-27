@@ -12,6 +12,7 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
+        self.height = 0
 
 class BinarySearchTree:
     def __init__(self):
@@ -147,6 +148,7 @@ class BinarySearchTree:
                 stack.append(popped_node.right)
             if popped_node.left is not None:
                 stack.append(popped_node.left)
+        return
 
     def kth_smallest(self, k):
         """
@@ -179,6 +181,13 @@ class BinarySearchTree:
             if results_in_order[i] <= results_in_order[i - 1]:
                 return False
         return True
+    def height(self, node):
+        """
+        find the height of a given node
+        :param node:
+        :return: height
+        """
+        return node.height
 
 
 my_tree = BinarySearchTree()
@@ -216,4 +225,4 @@ print()
 print("BST is valid:")
 print(my_tree.is_valid_bst())
 
-#print(my_tree.root)
+print(my_tree.height(my_tree.root.right.left))
