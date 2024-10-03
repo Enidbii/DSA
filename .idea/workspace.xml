@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bec8e9fe-96b5-429c-906f-6a346621269e" name="Changes" comment="bsts">
+      <change afterPath="$PROJECT_DIR$/sort.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/avl.py" beforeDir="false" afterPath="$PROJECT_DIR$/avl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binarysearchtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/binarysearchtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slist.py" beforeDir="false" afterPath="$PROJECT_DIR$/slist.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,25 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.avl.executor": "Run",
-    "Python.binarysearchtree.executor": "Run",
-    "Python.comp.executor": "Run",
-    "Python.dictionary.executor": "Run",
-    "Python.dlremove.executor": "Run",
-    "Python.forrrr.executor": "Run",
-    "Python.hashtables.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.rBinarySearchTree.executor": "Run",
-    "Python.slist.executor": "Run",
-    "Python.tree.executor": "Run",
-    "Python.validate.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/enid/PycharmProjects/alx-higher_level_programming"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.avl.executor&quot;: &quot;Run&quot;,
+    &quot;Python.binarysearchtree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.comp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dictionary.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dlremove.executor&quot;: &quot;Run&quot;,
+    &quot;Python.forrrr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hashtables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rBinarySearchTree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.slist.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sort.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tree.executor&quot;: &quot;Run&quot;,
+    &quot;Python.validate.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/enid/PycharmProjects/alx-higher_level_programming&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSA" />
@@ -167,7 +169,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-0e3be3396995-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23339.19" />
       </set>
     </attachedChunks>
   </component>
@@ -204,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727357713382</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bsts">
+      <option name="closed" value="true" />
+      <created>1727441655021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727441655021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
