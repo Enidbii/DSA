@@ -137,18 +137,18 @@ class BinarySearchTree:
             if popped_node.right is not None:
                 queue.append(popped_node.right)
 
-    def dfs(self):
-        stack = []
-        temp = self.root
-        stack.append(temp)
-        while stack:
-            popped_node = stack.pop()
-            print(popped_node.value, end=" ")
-            if popped_node.right is not None:
-                stack.append(popped_node.right)
-            if popped_node.left is not None:
-                stack.append(popped_node.left)
-        return
+    # def dfs(self):
+    #     stack = []
+    #     temp = self.root
+    #     stack.append(temp)
+    #     while stack:
+    #         popped_node = stack.pop()
+    #         print(popped_node.value, end=" ")
+    #         if popped_node.right is not None:
+    #             stack.append(popped_node.right)
+    #         if popped_node.left is not None:
+    #             stack.append(popped_node.left)
+    #     return
 
     def kth_smallest(self, k):
         """
@@ -189,6 +189,36 @@ class BinarySearchTree:
         """
         return node.height
 
+    def dfs2(self):
+        temp = self.root
+        if temp is None:
+            return None
+        stackit = []
+        stackit.append(temp)
+        while stackit:
+            while temp is not None:
+                stackit.append(temp)
+                temp = temp.left
+            if stackit:
+                temp = stackit.pop()
+                print(temp.value, end=" ")
+                temp = temp.right
+
+        return
+
+    def bfs2(self):
+        queue = []
+        temp = self.root
+        queue.append(temp)
+        while queue:
+            popped_node = queue.pop(0)
+            print(popped_node.value, end=" ")
+            if popped_node.left is not None:
+                queue.append(popped_node.left)
+            if popped_node.right is not None:
+                queue.append(popped_node.right)
+        return
+
 
 my_tree = BinarySearchTree()
 my_tree.insert(47)
@@ -215,7 +245,7 @@ print("Breadth First Search -->")
 my_tree.bfs()
 print()
 print("Depth First Search -->")
-my_tree.dfs()
+my_tree.dfs2()
 print()
 print(my_tree.kth_smallest(1))
 print(my_tree.kth_smallest(3))

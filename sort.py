@@ -110,6 +110,7 @@ def quick_sort(my_list):
 
 
 
+
 mylist = [4,1,34,33,22,25,40,2]
 # print(bubble_sort(mylist))
 # print(selection_sort(mylist))

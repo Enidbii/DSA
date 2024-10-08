@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bec8e9fe-96b5-429c-906f-6a346621269e" name="Changes" comment="bsts">
-      <change afterPath="$PROJECT_DIR$/sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heap.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/avl.py" beforeDir="false" afterPath="$PROJECT_DIR$/avl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slist.py" beforeDir="false" afterPath="$PROJECT_DIR$/slist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binarysearchtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/binarysearchtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +58,7 @@
     &quot;Python.dlremove.executor&quot;: &quot;Run&quot;,
     &quot;Python.forrrr.executor&quot;: &quot;Run&quot;,
     &quot;Python.hashtables.executor&quot;: &quot;Run&quot;,
+    &quot;Python.heap.executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.rBinarySearchTree.executor&quot;: &quot;Run&quot;,
     &quot;Python.slist.executor&quot;: &quot;Run&quot;,
@@ -69,7 +70,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/enid/PycharmProjects/alx-higher_level_programming&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="dictionary" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSA" />
       <option name="ENV_FILES" value="" />
